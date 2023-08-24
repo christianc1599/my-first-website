@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/CSS" href="css/style.production.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Contact Info</title>
+</head>
+<body>
+  <header class="page-header">
+  <img src="img/vetmed-logo.svg" alt="logo of veterinary medicine" class="page-header__item" >
+<nav class="main-navigation page-header__item">
+<ul role="menubar" class="navigation-list">
+  <!--revisit this and see if you wanna change the links in your portfolio to something else-->
+  <li role="presentation">
+    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">
+    <button type="button">Home</button></a>
+  </li>
+  <li role="presentation">
+    <a href="about.html" role="menuitem" class="navigation-list__item--active">
+    <button type="button">About</button></a>
+  </li>
+  <li role="presentation">
+    <a href="contact.html" role="menuitem" class="navigation-list__item--active">
+    <button type="button">Contact</button></a>   
+  </li>
+  <li role="presentation">
+    <a href="work.html" role="menuitem" class="navigation-list__item--active">
+    <button type="button"> Work </button></a>
+  </li>
+</ul>
+</nav>
+</header>
+    <div>
+      <p>Enter your contact information here: </p>
+        <form action="" method="post" id="contact-form">
+         <label class="standard-label" for="contact-email">E-Mail: </label> 
+         <input type="email" id="contact-email" required>
+
+         <label class="standard-label" for="contact-phone">Telephone: </label>
+         <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+
+         <label class="standard-label" for="contact-message">Message: </label>
+         <textarea maxlength="240" id="contact-message" required></textarea>
+
+         <input type="submit" value="Send message">
+        </form>
+    </div>
+   <p>This is my contact information below:</p> 
+     <div>
+        <p>
+            <a href="mailto:christian.canales1599@gmail.com">E-Mail me at christian.canales1599@gmail.com</a>
+            <br>
+            <a  href="tel: 857 212 4481"> phone number: (857)212-4481</a>
+        </p>
+     </div>
+     <footer class="page-footer">
+      <p>You can find me on</p>
+        <!--not sure if you want to link your twitter to your portfolio. 
+        Make sure to replace src attributes with actual links to your sites-->
+        <div class="social-media">
+          <a href="#"><img src="img/github.svg" alt="github"></a>
+          <a href="#"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+        </div>
+    </footer>
+     <script src="js/tota11y.min.js"></script>
+</body>
+</html>
